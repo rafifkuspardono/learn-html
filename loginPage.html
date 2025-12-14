@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Masukkan Username dan Password</title>
+    <style>
+    body {
+    text-align: center;
+    margin-top: 100px;  
+    background-color: pink;
+    }       
+    input[type="submit"] {
+        font-size: 15px;
+        width: 60px;
+        height: 25px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: lightblue;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="loveYou.jpg">
+        <div>
+          <label for="username"><b>Username:</b></label><br><br>
+          <input type="text" id="username" name="username" placeholder="Masukkan Username" required><br><br>
+        </div>
+
+        <div>
+          <label for="password"><b>Password:</b></label><br><br>
+          <input type="password" id="password" name="password" placeholder="Masukkan Password" maxlength="8" required><br><br>
+        </div>
+         
+        <input type="submit" value="Log In">
+    </form>
+  </body>
+</html>
