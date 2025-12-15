@@ -2,37 +2,33 @@
 <html>
   <head>
     <title>Masukkan Username dan Password</title>
-    <style>
-    body {
-    text-align: center;
-    margin-top: 100px;  
-    background-color: pink;
-    }       
-    input[type="submit"] {
-        font-size: 15px;
-        width: 60px;
-        height: 25px;
-        border-radius: 7px;
-        cursor: pointer;
-    }
-    input[type="submit"]:hover {
-        background-color: lightblue;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="all.css">
   </head>
   <body>
     <form action="loveYou.jpg">
-        <div>
+      <div class="nav-bar">
+        <span class="nav-logo">
+          <img src="f.png">
+        </span> 
+        <ul>
+          <li class ="nav-item">
+            <a href="home.html">😁 Home</a>
+          </li>
+          <li class ="nav-item">
+            <a href="about.html">🥰 About</a>
+          </li>
+          <li class ="nav-item">
+            <a href="loginPage.html">🤪 Login</a>
+          </li>
+        </ul>
+      </div>
+      <div class="login">
           <label for="username"><b>Username:</b></label><br><br>
-          <input type="text" id="username" name="username" placeholder="Masukkan Username" required><br><br>
-        </div>
-
-        <div>
+          <input type="text" id="username" name="username" placeholder="Masukkan Username" required><br><br>  
           <label for="password"><b>Password:</b></label><br><br>
           <input type="password" id="password" name="password" placeholder="Masukkan Password" maxlength="8" required><br><br>
-        </div>
-         
-        <input type="submit" value="Log In">
+        <input type="submit" class="login-button" value="Log In">
+      </div>
     </form>
   </body>
 </html>
